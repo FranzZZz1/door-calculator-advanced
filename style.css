@@ -192,11 +192,6 @@ body {
     display: none;
 }
 
-.sum-card:not(:first-child),
-.card:not(:first-child) {
-    /* margin-left: -1px; */
-}
-
 .sum-card:first-child {
     border-width: 1px 1px 1px 1px;
 }
@@ -251,12 +246,6 @@ pre {
     margin: 0;
 }
 
-@media (max-width: 647px) {
-    /* .sum-card:nth-child(4),
-    .card:nth-child(4) {
-        margin-left: -1px;
-    } */
-}
 @media (max-width: 525px) {
     .sum-card,
     .card {
@@ -271,7 +260,9 @@ pre {
     .input-container__icons {
         width: 90px;
     }
-    .calculate__multiplier,
+    .calculate__multiplier {
+        height: 38px;
+    }
     .calculate__input {
         padding: 10px 15px;
     }
@@ -279,14 +270,6 @@ pre {
     .remove-button {
         padding: 6px 10px;
     }
-}
-@media (max-width: 505px) {
-    /* .sum-card:nth-child(3),
-    .card:nth-child(3) {
-        margin-left: -1px;
-    } */
-}
-@media (max-width: 481px) {
 }
 @media (max-width: 454px) {
     .calculate__input {
@@ -305,8 +288,6 @@ pre {
     .remove-button {
         padding: 6px 0;
     }
-}
-@media (max-width: 405px) {
 }
 @media (max-width: 349px) {
     .sum-card,
