@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="input-container-cardBox">
+                    <div class="input-container">
+                        <div class="calculate__description">
+                            <span
+                                >Толщина стены<br />
+                                в миллиметрах</span
+                            >
+                            <input class="calculate__input" type="number" placeholder="Ввести" />
+                        </div>
+
+                        <div class="calculate__description">
+                            <span
+                                >Количество<br />
+                                дверных проемов</span
+                            >
+                            <select class="calculate__multiplier">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="input-container__icons">
+                            <button class="clear-button">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 25"
+                                    fill="none"
+                                >
+                                    <g id="material-symbols:refresh">
+                                        <path
+                                            id="Vector"
+                                            d="M12 20.5C14.2333 20.5 16.125 19.725 17.675 18.175C19.225 16.625 20 
+										14.7333 20 12.5C20 10.2667 19.225 8.375 17.675 6.825C16.125 5.275 14.2333 4.5 12 4.5C10.85 
+										4.5 9.75 4.73733 8.7 5.212C7.65 5.68667 6.75 6.366 6 7.25V4.5H4V11.5H11V9.5H6.8C7.33333 8.56667 
+										8.06267 7.83333 8.988 7.3C9.91333 6.76667 10.9173 6.5 12 6.5C13.6667 6.5 15.0833 7.08333 16.25 
+										8.25C17.4167 9.41667 18 10.8333 18 12.5C18 14.1667 17.4167 15.5833 16.25 16.75C15.0833 17.9167 
+										13.6667 18.5 12 18.5C10.7167 18.5 9.55833 18.1333 8.525 17.4C7.49167 16.6667 6.76667 15.7 6.35 
+										14.5H4.25C4.71667 16.2667 5.66667 17.7083 7.1 18.825C8.53333 19.9417 10.1667 20.5 12 20.5Z"
+                                            fill="#4A4A4A"
+                                        />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cardBox"></div>
+                </div>
+                <div class="sumContainer">
+                    <div class="sum-card sum-card-1">
+                        <pre>
+						<div class="korob">Короб: <div class="card__box-value">70 нетелескоп</div></div>
+					</pre>
+                        <div>
+                            Сумма кол-ва доборов:<br />
+                            <div class="sum__dobor-value-100">100мм: 0</div>
+                            <div class="sum__dobor-value-150">150мм: 0</div>
+                            <div class="sum__dobor-value-200">200мм: 0</div>
+                        </div>
+                    </div>
+                    <div class="sum-card sum-card-2">
+                        <pre>
+						<div class="korob">Короб: <div class="card__box-value">70 телескоп</div></div>
+					</pre>
+                        <div>
+                            Сумма кол-ва доборов:<br />
+                            <div class="sum__dobor-value-100">100мм: 0</div>
+                            <div class="sum__dobor-value-150">150мм: 0</div>
+                            <div class="sum__dobor-value-200">200мм: 0</div>
+                        </div>
+                    </div>
+                    <div class="sum-card sum-card-3">
+                        <pre>
+						<div class="korob">Короб: <div class="card__box-value">74 телескоп</div></div>
+					</pre>
+                        <div>
+                            Сумма кол-ва доборов:<br />
+                            <div class="sum__dobor-value-100">100мм: 0</div>
+                            <div class="sum__dobor-value-150">150мм: 0</div>
+                            <div class="sum__dobor-value-200">200мм: 0</div>
+                        </div>
+                    </div>
+                    <div class="sum-card sum-card-4">
+                        <pre>
+						<div class="korob">Короб: <div class="card__box-value">80 телескоп</div></div>
+					</pre>
+                        <div>
+                            Сумма кол-ва доборов:<br />
+                            <div class="sum__dobor-value-100">100мм: 0</div>
+                            <div class="sum__dobor-value-150">150мм: 0</div>
+                            <div class="sum__dobor-value-200">200мм: 0</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-wall-thickness-button">
+                    <svg
+                        width="13"
+                        height="13"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M27 19.497H19.5V26.997C19.5 27.3948 19.342 27.7764 19.0607 28.0577C18.7794 28.339 18.3978 28.497 18 28.497C17.6022 28.497 17.2206 28.339 16.9393 28.0577C16.658 27.7764 16.5 27.3948 16.5 26.997V19.497H9C8.60218 19.497 8.22064 19.339 7.93934 19.0577C7.65804 18.7764 7.5 18.3948 7.5 17.997C7.5 17.5992 7.65804 17.2177 7.93934 16.9363C8.22064 16.655 8.60218 16.497 9 16.497H16.5V8.99701C16.5 8.59918 16.658 8.21765 16.9393 7.93635C17.2206 7.65504 17.6022 7.49701 18 7.49701C18.3978 7.49701 18.7794 7.65504 19.0607 7.93635C19.342 8.21765 19.5 8.59918 19.5 8.99701V16.497H27C27.3978 16.497 27.7794 16.655 28.0607 16.9363C28.342 17.2177 28.5 17.5992 28.5 17.997C28.5 18.3948 28.342 18.7764 28.0607 19.0577C27.7794 19.339 27.3978 19.497 27 19.497Z"
+                            fill="#000"
+                        />
+                    </svg>
+                    Добавить расчет
+                </button>
+                <button class="calculate__button">Рассчитать</button>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
